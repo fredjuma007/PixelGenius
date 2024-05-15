@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
-import { ModeToggle } from "@/components/mode-toggle";
 import { IBM_Plex_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
@@ -30,9 +29,6 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-
-            <div><ModeToggle /></div>
-
             {children}
           </ThemeProvider>
           </body>
